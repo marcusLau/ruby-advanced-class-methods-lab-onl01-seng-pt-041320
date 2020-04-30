@@ -60,6 +60,9 @@ class Song
   
   def self.create_from_filename(string)
     data = self.new_from_filename(string)
-    song = 
+    song = self.create
+    song.name = data.name
+    song.artist_name = data.artist_name
+    song
   end
 end
